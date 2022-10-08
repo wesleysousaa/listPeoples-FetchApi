@@ -1,6 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react'
-const url = "http://localhost:3000/peoples"
+const url = "http://localhost:3000/pessoas"
 
 function App() {
 
@@ -13,14 +13,16 @@ function App() {
 
       setPessoas(data)
     }
+    fetchPessoas()
   }, [])
+  
   return (
     <div className="App">
-        <ul>
-          {pessoas.map((p, k) => (
-            <li key={k}>{p.nome} - {p.idade} anos. e é {p.sexo}</li>
-          ))}
-        </ul>
+      <ul>
+        {pessoas.map((p, k) => (
+          <li key={k}>{p.nome} - {p.idade} anos - {p.sexo}</li>
+        ))}
+      </ul>
     </div>
   );
 }
