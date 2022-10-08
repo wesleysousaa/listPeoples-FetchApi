@@ -1,0 +1,19 @@
+{
+    "pessoas":[
+        {
+            "nome":"wesley",
+            "idade":"19",
+            "sexo":"masculino"
+        },
+        {
+            "nome":"jeff",
+            "idade":"19",
+            "sexo":"feminine"
+        },
+        {
+            "nome":"mateus",
+            "idade":"19",
+            "sexo":"female"
+        }
+    ]
+}
