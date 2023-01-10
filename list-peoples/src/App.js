@@ -23,6 +23,7 @@ function App() {
           <li key={k}>{p.nome} - {p.idade} anos - {p.sexo}</li>
         ))}
       </ul>
+      
     </div>
   );
 }
